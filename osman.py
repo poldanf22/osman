@@ -1389,8 +1389,8 @@ if uploaded_file is not None:
     penilaian = PENILAIAN.lower()
     kurikulum = KURIKULUM.lower()
 
-    path_file = fr"E:\apk osman v.1.1 buat filezilla\hasil nilai standar\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+    path_file = fr"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
     wb.save(path_file)
 
     st.success(
-        "File telah disimpan di E:\ apk osman v.1.1 buat filezilla\hasil nilai standar")
+        "File telah disimpan")
